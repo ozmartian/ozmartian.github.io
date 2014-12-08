@@ -1,0 +1,611 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+html, body {
+    height: 100%
+}
+body {
+    font-size: 62.5%;
+    line-height: 1;
+    font-family: Helvetica
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+ol, ul {
+    list-style: none
+}
+blockquote, q {
+    quotes: none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+strong {
+    font-weight: bold
+}
+#stats {
+    display: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+img {
+    border: 0;
+    max-width: 100%
+}
+a {
+    display: block;
+    text-decoration: none
+}
+html, body {
+    width: 100%;
+    overflow: hidden;
+    position: relative
+}
+body {
+    background: #222;
+    background-size: 100% 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+#container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: none
+}
+.guideTop {
+    width: 114px;
+    height: 61px;
+    background: url(../images/arrows.png) 0 0;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -57px;
+    display: block;
+    z-index: 9998;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    opacity: 1;
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -webkit-animation: guideTop 1.5s infinite;
+    animation: guideTop 1.5s infinite
+}
+@-webkit-keyframes guideTop {
+    0% {
+        transform: translateY(42px);
+        -webkit-transform: translateY(42px);
+        opacity: 0
+   }
+   60% {
+       transform: translateY(12px);
+       -webkit-transform: translateY(12px);
+       opacity: 1
+  }
+  100% {
+      transform: translateY(0px);
+      -webkit-transform: translateY(0px);
+      opacity: 0
+ }
+}
+@keyframes guideTop {
+    0% {
+        transform: translateY(42px);
+        -webkit-transform: translateY(42px);
+        opacity: 0
+   }
+   60% {
+       transform: translateY(12px);
+       -webkit-transform: translateY(12px);
+       opacity: 1
+  }
+  100% {
+      transform: translateY(0px);
+      -webkit-transform: translateY(0px);
+      opacity: 0
+ }
+}
+#index .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0
+}
+#loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: url(../images/loading.gif) no-repeat center center
+}
+#index .bg canvas {
+    width: 100%;
+    height: 100%
+}
+#index .captions {
+    display: none;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    text-indent: -9999px;
+    background: url(../images/index_captions.png) no-repeat 0 0
+}
+#index .page {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-transition: -webkit-transform ease 300ms;
+    transition: transform ease 300ms
+}
+#index .current {
+    z-index: 1
+}
+#index .page-1 h1 {
+    top: 106px;
+    height: 127px;
+    background-position: center -31px
+}
+#index .page-1 p {
+    top: 268px;
+    height: 30px;
+    background-position: center 0
+}
+#index .page-1 #logo {
+    top: 335px;
+    height: 45px;
+    background: url(../images/index_logo.png) no-repeat center 0
+}
+#index .page-1 #product {
+    bottom: 126px;
+    height: 286px;
+    background: url(../images/index_product.png) no-repeat center 0
+}
+#index .page-2 h2 {
+    position: absolute;
+    left: 36px;
+    top: 112px;
+    width: 426px;
+    height: 76px;
+    background: url(../images/caption1.png) no-repeat 0 0
+}
+#index .page-2 .imageBox, #index .page-3 .imageBox, #index .page-4 .imageBox {
+    position: absolute;
+    left: 33px;
+    top: 237px;
+    width: 434px;
+    height: 310px;
+    background: url(../images/img_box.png) no-repeat 0 0
+}
+#index .page-2 img, #index .page-3 img, #index .page-4 img {
+    position: absolute;
+    left: 35px;
+    top: 239px;
+    width: 430px;
+    height: 306px
+}
+#index .page-2 .sanitary_napkins {
+    position: absolute;
+    left: 257px;
+    top: 338px;
+    width: 377px;
+    height: 408px;
+    background: url(../images/sanitary_napkins_1.png) no-repeat 0 0
+}
+#index .page-2 .halo {
+    position: absolute;
+    top: 632px;
+    left: 236px;
+    width: 475px;
+    height: 145px;
+    background: url(../images/halo.png) no-repeat 0 0;
+    -webkit-animation: headLight 2s infinite both;
+    animation: headLight 2s infinite both
+}
+#index .page-3 h2 {
+    position: absolute;
+    left: 36px;
+    top: 116px;
+    width: 495px;
+    height: 76px;
+    background: url(../images/caption2.png) no-repeat 0 0
+}
+#index .page-3 .sanitary_napkins {
+    position: absolute;
+    left: 32px;
+    top: 464px;
+    width: 580px;
+    height: 328px;
+    background: url(../images/sanitary_napkins_2.png) no-repeat 0 0
+}
+#index .page-3 .halo {
+    position: absolute;
+    top: 700px;
+    left: 236px;
+    width: 475px;
+    height: 145px;
+    background: url(../images/halo.png) no-repeat 0 0;
+    -webkit-animation: headLight 2s infinite both;
+    animation: headLight 2s infinite both
+}
+#index .page-4 h2 {
+    position: absolute;
+    left: 36px;
+    top: 112px;
+    width: 579px;
+    height: 76px;
+    background: url(../images/caption3a4f0.png?v=0) no-repeat 0 0
+}
+#index .page-4 .sanitary_napkins {
+    position: absolute;
+    left: 224px;
+    top: 389px;
+    width: 433px;
+    height: 435px;
+    background: url(../images/sanitary_napkins_3.png) no-repeat 0 0
+}
+#index .page-4 .halo {
+    position: absolute;
+    left: 236px;
+    top: 700px;
+    width: 475px;
+    height: 145px;
+    background: url(../images/halo.png) no-repeat 0 0;
+    -webkit-animation: headLight 2s infinite both;
+    animation: headLight 2s infinite both
+}
+#index .page-5 h2 {
+    position: absolute;
+    left: 38px;
+    top: 114px;
+    width: 556px;
+    height: 77px;
+    background: url(../images/caption4.png) no-repeat 0 0
+}
+#index .page-5 .ditu {
+    position: absolute;
+    left: 0;
+    top: 394px;
+    width: 372px;
+    height: 440px;
+    background: url(../images/ditu.png) no-repeat 0 0
+}
+#index .page-5 .ditu_btn {
+    position: absolute;
+    left: 212px;
+    top: 602px;
+    width: 93px;
+    height: 93px;
+    background: url(../images/tidu_btn.png) no-repeat 0 0
+}
+#index .page-5 .ditu_img1 {
+    position: absolute;
+    left: 53px;
+    top: 330px;
+    width: 252px;
+    height: 294px;
+    background: url(../images/ditu_img_1.png) no-repeat 0 0;
+    -webkit-transform-origin: 79% 100%;
+    transform-origin: 79% 100%
+}
+#index .page-5 .ditu_img2 {
+    position: absolute;
+    left: 266px;
+    top: 215px;
+    width: 320px;
+    height: 420px;
+    background: url(../images/ditu_img_2.png) no-repeat 0 0;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%
+}
+#index .page-5 .ditu_img3 {
+    position: absolute;
+    left: 278px;
+    top: 615px;
+    width: 329px;
+    height: 201px;
+    background: url(../images/ditu_img_3.png) no-repeat 0 0;
+    -webkit-transform-origin: 0 12%;
+    transform-origin: 0 12%
+}
+#index .page-6 .content {
+    height: 2291px;
+    width: 100%
+}
+#index .page-6 .caption6_1 {
+    position: absolute;
+    left: 40px;
+    top: 112px;
+    width: 333px;
+    height: 40px;
+    background: url(../images/caption_6-1a4f0.png?v=0) no-repeat 0 0
+}
+#index .page-6 .caption6_2_1 {
+    position: absolute;
+    left: 148px;
+    top: 195px;
+    width: 226px;
+    height: 33px;
+    background: url(../images/caption_6-2_1.png) no-repeat 0 0
+}
+#index .page-6 .caption6_2_2 {
+    position: absolute;
+    left: 234px;
+    top: 246px;
+    width: 269px;
+    height: 37px;
+    background: url(../images/caption_6-2_2.png) no-repeat 0 0
+}
+#index .page-6 .haiwaidaigou {
+    position: absolute;
+    left: 0;
+    top: 326px;
+    width: 100%;
+    height: 446px;
+    background: url(../images/haiwaidaigoua4f0.png?v=0) no-repeat center 0
+}
+#index .page-6 .tiyan {
+    position: absolute;
+    left: 0;
+    top: 856px;
+    width: 100%;
+    height: 1435px
+}
+#index .page-6 .tiyan a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+#index .page-6 .caption6_3 {
+    position: absolute;
+    left: 48px;
+    top: 0;
+    width: 416px;
+    height: 39px;
+    background: url(../images/caption_6-3_v1.png) no-repeat 0 0
+}
+#index .page-6 .product_1 {
+    width: 100%;
+    height: 363px;
+    position: absolute;
+    left: 0;
+    top: 88px
+}
+#index .page-6 .bigHalo {
+    width: 368px;
+    height: 368px;
+    position: absolute;
+    text-align: center;
+    left: 34px;
+    top: 0;
+    background: url(../images/halo_big.png) no-repeat center 0;
+    -webkit-animation: headLight 2s infinite both;
+    animation: headLight 2s infinite both
+}
+#index .page-6 .bigHalo img, #index .page-6 .smallHalo img {
+    height: 100%
+}
+#index .page-6 .product_1 .bigHalo {
+    padding: 32px 0 0 0
+}
+#index .page-6 .product_1 .tips {
+    width: 164px;
+    height: 109px;
+    position: absolute;
+    left: 398px;
+    top: 134px;
+    background: url(../images/tips_1_v1.png) no-repeat center 0
+}
+#index .page-6 .product_1 .ljty {
+    width: 227px;
+    height: 89px;
+    position: absolute;
+    z-index: 9;
+    left: 391px;
+    top: 242px;
+    background: url(../images/ljty.png) no-repeat center center
+}
+#index .page-6 .smallHalo {
+    width: 298px;
+    height: 298px;
+    position: absolute;
+    top: 0;
+    background: url(../images/halo_small.png) no-repeat center 0;
+    -webkit-animation: headLight 2s infinite both;
+    animation: headLight 2s infinite both
+}
+#index .page-6 .product_3_4 {
+    width: 100%;
+    height: 420px;
+    position: absolute;
+    left: 0;
+    top: 522px
+}
+#index .page-6 .product_3_4 .ljty {
+    width: 320px;
+    height: 85px;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 355px;
+    background: url(../images/ljty1.png) no-repeat center center
+}
+#index .page-6 .product_3_4 .tips {
+    width: 320px;
+    height: 51px;
+    position: absolute;
+    left: 0;
+    top: 301px
+}
+#index .page-6 .product_3, #index .page-6 .product_4 {
+    width: 320px;
+    height: 100%;
+    float: left
+}
+#index .page-6 .product_3 .smallHalo {
+    left: 24px
+}
+#index .page-6 .product_3 img {
+    padding: 34px 0 12px
+}
+#index .page-6 .product_3 .tips {
+    background: url(../images/tips_3a4f0.png?v=0) no-repeat center 0
+}
+#index .page-6 .product_4 .smallHalo {
+    left: 320px
+}
+#index .page-6 .product_4 img {
+    padding: 30px 0 12px
+}
+#index .page-6 .product_4 .tips {
+    left: 320px;
+    background: url(../images/tips_4a4f0.png?v=0) no-repeat center 0
+}
+#index .page-6 .product_4 .ljty {
+    left: 320px
+}
+#index .page-6 footer {
+    width: 397px;
+    height: 293px;
+    position: absolute;
+    left: 40px;
+    top: 1010px;
+    background: url(../images/footer.png) no-repeat 0 0
+}
+@-webkit-keyframes slideToTop {
+    from {
+        -webkit-transform: translate3d(0, 1000px, 0);
+        transform: translate3d(0, 1000px, 0)
+   }
+   to {
+       -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0)
+  }
+}
+@keyframes slideToTop {
+    from {
+        -webkit-transform: translate3d(0, 1000px, 0);
+        transform: translate3d(0, 1000px, 0)
+   }
+   to {
+       -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0)
+  }
+}
+@-webkit-keyframes slideToBottom {
+    from {
+        -webkit-transform: translate3d(0, -1000px, 0);
+        transform: translate3d(0, -1000px, 0)
+   }
+   to {
+       -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0)
+  }
+}
+@keyframes slideToBottom {
+    from {
+        -webkit-transform: translate3d(0, -1000px, 0);
+        transform: translate3d(0, -1000px, 0)
+   }
+   to {
+       -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0)
+  }
+}
+@-webkit-keyframes smallToBig {
+    from {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0)
+   }
+   to {
+       -webkit-transform: scale(1, 1);
+       transform: scale(1, 1)
+  }
+}
+@keyframes smallToBig {
+    from {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0)
+   }
+   to {
+       -webkit-transform: scale(1, 1);
+       transform: scale(1, 1)
+  }
+}
+@-webkit-keyframes headLight {
+    0% {
+        -webkit-transform: scale(0.94, .94);
+        transform: scale(0.94, .94)
+   }
+   60% {
+       -webkit-transform: scale(1, 1);
+       transform: scale(1, 1)
+  }
+  100% {
+      -webkit-transform: scale(0.94, .94);
+      transform: scale(0.94, .94)
+ }
+}
+@keyframes headLight {
+    0% {
+        -webkit-transform: scale(0.9, .9);
+        transform: scale(0.9, .9)
+   }
+   60% {
+       -webkit-transform: scale(1, 1);
+       transform: scale(1, 1)
+  }
+  100% {
+      -webkit-transform: scale(0.9, .9);
+      transform: scale(0.9, .9)
+ }
+}
+@-webkit-keyframes fadeout {
+    from {
+        opacity: 0
+   }
+   to {
+       opacity: 1
+  }
+}
+@keyframes fadeout {
+    from {
+        opacity: 0
+   }
+   to {
+       opacity: 1
+  }
+}
