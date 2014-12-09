@@ -192,8 +192,8 @@ body {
     top: 250px;
     height: 155px;
     background: url(../images/index_logo.png) no-repeat center 0;
-    -webkit-animation: pulsate 3s infinite both;
-    animation: pulsate 3s infinite both;
+    /* -webkit-animation: pulsate 3s infinite both;
+    animation: pulsate 3s infinite both; */
 }
 #index .page-1 #product {
     top: 175px;
