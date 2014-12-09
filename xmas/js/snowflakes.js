@@ -22,10 +22,10 @@ function init() {
     sprite3 = THREE.ImageUtils.loadTexture("images/sprites/snowflake3.png");
     sprite4 = THREE.ImageUtils.loadTexture("images/sprites/snowflake4.png");
     sprite5 = THREE.ImageUtils.loadTexture("images/sprites/snowflake5.png");
-    for (i = 0; i < 850; i++) {
+    for (i = 0; i < 500; i++) {
         var vertex = new THREE.Vector3();
-        vertex.x = Math.random() * 2000 - 2000;
-        vertex.y = Math.random() * 2000 - 2000;
+        vertex.x = Math.random() * 2000 - 1000;
+        vertex.y = Math.random() * 2000 - 1000;
         vertex.z = Math.random() * 2000 - 1000;
         geometry.vertices.push(vertex);
     }
