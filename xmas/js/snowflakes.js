@@ -22,7 +22,7 @@ function init() {
     sprite3 = THREE.ImageUtils.loadTexture("images/sprites/snowflake3.png");
     sprite4 = THREE.ImageUtils.loadTexture("images/sprites/snowflake4.png");
     sprite5 = THREE.ImageUtils.loadTexture("images/sprites/snowflake5.png");
-    for (i = 0; i < 10000; i++) {
+    for (i = 0; i < 2000; i++) {
         var vertex = new THREE.Vector3();
         vertex.x = Math.random() * 2000 - 1000;
         vertex.y = Math.random() * 2000 - 1000;
@@ -128,7 +128,7 @@ function render() {
     }
     for (i = 0; i < materials.length; i++) {
         color = parameters[i][0];
-        h = (360 * (color[0] + time) % 360) / 360;
+        h = (180 * (color[0] + time) % 180) / 180;
         materials[i].color.setHSL(h, color[1], color[2]);
     }
     renderer.render(scene, camera);

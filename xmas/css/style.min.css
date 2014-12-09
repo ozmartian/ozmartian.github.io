@@ -1,4 +1,4 @@
-﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -34,9 +34,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 strong {
     font-weight: bold
 }
-#stats {
-    display: none;
-}
 table {
     border-collapse: collapse;
     border-spacing: 0
@@ -55,7 +52,6 @@ html, body {
     position: relative
 }
 body {
-    background: #222;
     background-size: 100% 100%;
     text-align: center;
     overflow: hidden;
@@ -154,7 +150,9 @@ body {
     overflow: hidden;
     width: 100%;
     text-indent: -9999px;
-    background: url(../images/index_captions.png) no-repeat 0 0
+}
+#index h1.captions {
+    background: url(../images/index_captions.png) no-repeat 0 0;
 }
 #index .page {
     width: 100%;
@@ -175,32 +173,37 @@ body {
     z-index: 1
 }
 #index .page-1 h1 {
-    top: 106px;
-    height: 127px;
-    background-position: center -31px
+    top: 120px;
+    width: 100%;
+    height: 200px;
+    background-position: center top;
 }
 #index .page-1 p {
     top: 268px;
     height: 30px;
     background-position: center 0
 }
+#loading, #stats {
+    display: none;
+}
 #index .page-1 #logo {
-    top: 335px;
-    height: 45px;
+    top: 350px;
+    height: 69px;
     background: url(../images/index_logo.png) no-repeat center 0
 }
 #index .page-1 #product {
-    bottom: 126px;
-    height: 286px;
-    background: url(../images/index_product.png) no-repeat center 0
+    top: 330px;
+    height: 689px;
+    background: url(../images/products/page1.png) no-repeat center 0
 }
 #index .page-2 h2 {
     position: absolute;
-    left: 36px;
-    top: 112px;
-    width: 426px;
-    height: 76px;
-    background: url(../images/caption1.png) no-repeat 0 0
+    left: 20px;
+    top: 290px;
+    width: 600px;
+    height: 197px;
+    background: url(../images/page2-text.png) no-repeat 0 0;
+    background-size: 600px 197px;
 }
 #index .page-2 .imageBox, #index .page-3 .imageBox, #index .page-4 .imageBox {
     position: absolute;
@@ -219,11 +222,11 @@ body {
 }
 #index .page-2 .sanitary_napkins {
     position: absolute;
-    left: 257px;
-    top: 338px;
-    width: 377px;
-    height: 408px;
-    background: url(../images/sanitary_napkins_1.png) no-repeat 0 0
+    left: 290px;
+    top: 440px;
+    width: 338px;
+    height: 287px;
+    background: url(../images/products/page2.png) no-repeat 0 0
 }
 #index .page-2 .halo {
     position: absolute;
@@ -267,7 +270,7 @@ body {
     top: 112px;
     width: 579px;
     height: 76px;
-    background: url(../images/caption3a4f0.png?v=0) no-repeat 0 0
+    background: url(../images/caption3.png?v=0) no-repeat 0 0
 }
 #index .page-4 .sanitary_napkins {
     position: absolute;
@@ -351,7 +354,7 @@ body {
     top: 112px;
     width: 333px;
     height: 40px;
-    background: url(../images/caption_6-1a4f0.png?v=0) no-repeat 0 0
+    background: url(../images/caption_6-1.png?v=0) no-repeat 0 0
 }
 #index .page-6 .caption6_2_1 {
     position: absolute;
@@ -375,7 +378,7 @@ body {
     top: 326px;
     width: 100%;
     height: 446px;
-    background: url(../images/haiwaidaigoua4f0.png?v=0) no-repeat center 0
+    background: url(../images/haiwaidaigou.png?v=0) no-repeat center 0
 }
 #index .page-6 .tiyan {
     position: absolute;
@@ -482,7 +485,7 @@ body {
     padding: 34px 0 12px
 }
 #index .page-6 .product_3 .tips {
-    background: url(../images/tips_3a4f0.png?v=0) no-repeat center 0
+    background: url(../images/tips_3.png?v=0) no-repeat center 0
 }
 #index .page-6 .product_4 .smallHalo {
     left: 320px
@@ -492,7 +495,7 @@ body {
 }
 #index .page-6 .product_4 .tips {
     left: 320px;
-    background: url(../images/tips_4a4f0.png?v=0) no-repeat center 0
+    background: url(../images/tips_4.png?v=0) no-repeat center 0
 }
 #index .page-6 .product_4 .ljty {
     left: 320px
