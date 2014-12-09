@@ -24,9 +24,9 @@ function init() {
     sprite5 = THREE.ImageUtils.loadTexture("images/sprites/snowflake5.png");
     for (i = 0; i < 1000; i++) {
         var vertex = new THREE.Vector3();
-        vertex.x = Math.random() * 2000 - 1000;
-        vertex.y = Math.random() * 2000 - 1000;
-        vertex.z = Math.random() * 2000 - 1000;
+        vertex.x = Math.random() * 2000 - 2000;
+        vertex.y = Math.random() * 2000 - 2000;
+        vertex.z = Math.random() * 2000 - 2000;
         geometry.vertices.push(vertex);
     }
     parameters = [
