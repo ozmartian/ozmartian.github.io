@@ -193,6 +193,8 @@ body {
     height: 155px;
     background: url(../images/index_logo.png) no-repeat center 0;
     background-size: 155px 55px;
+    -webkit-animation: pulsate 3s infinite both;
+    animation: pulsate 3s infinite both;
 }
 #index .page-1 #product {
     top: 175px;
@@ -512,6 +514,34 @@ body {
     top: 1010px;
     background: url(../images/footer.png) no-repeat 0 0
 }
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.6, .6);
+        transform: scale(0.6, .6)
+   }
+   60% {
+       -webkit-transform: scale(1, 1);
+       transform: scale(1, 1)
+  }
+  100% {
+      -webkit-transform: scale(0.6, .6);
+      transform: scale(0.8, .6)
+ }
+}
+@keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.6, .6);
+        transform: scale(0.6, .6)
+   }
+   60% {
+       -webkit-transform: scale(1, 1);
+       transform: scale(1, 1)
+  }
+  100% {
+      -webkit-transform: scale(0.6, .6);
+      transform: scale(0.6, .6)
+ }
+}
 @-webkit-keyframes slideToTop {
     from {
         -webkit-transform: translate3d(0, 1000px, 0);
@@ -574,30 +604,30 @@ body {
 }
 @-webkit-keyframes headLight {
     0% {
-        -webkit-transform: scale(0.94, .94);
-        transform: scale(0.94, .94)
+        -webkit-transform: scale(0.6, .6);
+        transform: scale(0.6, .6)
    }
    60% {
        -webkit-transform: scale(1, 1);
        transform: scale(1, 1)
   }
   100% {
-      -webkit-transform: scale(0.94, .94);
-      transform: scale(0.94, .94)
+      -webkit-transform: scale(0.6, .6);
+      transform: scale(0.6, .6)
  }
 }
 @keyframes headLight {
     0% {
-        -webkit-transform: scale(0.9, .9);
-        transform: scale(0.9, .9)
+        -webkit-transform: scale(0.6, .6);
+        transform: scale(0.6, .6)
    }
    60% {
        -webkit-transform: scale(1, 1);
        transform: scale(1, 1)
   }
   100% {
-      -webkit-transform: scale(0.9, .9);
-      transform: scale(0.9, .9)
+      -webkit-transform: scale(0.6, .6);
+      transform: scale(0.6, .6)
  }
 }
 @-webkit-keyframes fadeout {
