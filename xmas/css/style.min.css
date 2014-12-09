@@ -516,30 +516,30 @@ body {
 }
 @-webkit-keyframes pulsate {
     0% {
-        -webkit-transform: scale(0.6, .6);
-        transform: scale(0.6, .6)
+        -webkit-transform: scale(0.8, .8);
+        transform: scale(0.8, .8)
    }
    60% {
        -webkit-transform: scale(1, 1);
        transform: scale(1, 1)
   }
   100% {
-      -webkit-transform: scale(0.6, .6);
-      transform: scale(0.8, .6)
+      -webkit-transform: scale(0.8, .8);
+      transform: scale(0.8, .8)
  }
 }
 @keyframes pulsate {
     0% {
-        -webkit-transform: scale(0.6, .6);
-        transform: scale(0.6, .6)
+        -webkit-transform: scale(0.8, .8);
+        transform: scale(0.8, .8)
    }
    60% {
        -webkit-transform: scale(1, 1);
        transform: scale(1, 1)
   }
   100% {
-      -webkit-transform: scale(0.6, .6);
-      transform: scale(0.6, .6)
+      -webkit-transform: scale(0.8, .8);
+      transform: scale(0.8, .8)
  }
 }
 @-webkit-keyframes slideToTop {
