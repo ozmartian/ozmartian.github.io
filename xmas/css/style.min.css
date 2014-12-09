@@ -203,7 +203,7 @@ body {
 #index .page-2 h2 {
     position: absolute;
     left: 20px;
-    top: 290px;
+    top: 190px;
     width: 600px;
     height: 197px;
     background: url(../images/page2-text.png) no-repeat 0 0;
@@ -212,7 +212,7 @@ body {
 #index .page-2 .imageBox, #index .page-3 .imageBox, #index .page-4 .imageBox {
     position: absolute;
     left: 33px;
-    top: 237px;
+    top: 137px;
     width: 434px;
     height: 310px;
     background: url(../images/img_box.png) no-repeat 0 0
