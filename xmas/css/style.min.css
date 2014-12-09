@@ -203,7 +203,7 @@ body {
 #index .page-2 h2 {
     position: absolute;
     left: 20px;
-    top: 190px;
+    top: 140px;
     width: 600px;
     height: 197px;
     background: url(../images/page2-text.png) no-repeat 0 0;
@@ -227,14 +227,14 @@ body {
 #index .page-2 .sanitary_napkins {
     position: absolute;
     left: 290px;
-    top: 350px;
+    top: 300px;
     width: 338px;
     height: 287px;
     background: url(../images/products/page2.png) no-repeat 0 0
 }
 #index .page-2 .halo {
     position: absolute;
-    top: 570px;
+    top: 520px;
     left: 236px;
     width: 475px;
     height: 145px;
