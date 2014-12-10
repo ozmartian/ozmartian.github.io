@@ -246,7 +246,7 @@ body {
 #index .page-3 h2 {
     position: absolute;
     left: 50px;
-    top: 150px;
+    top: 85px;
     width: 529px;
     height: 225px;
     background: url(../images/page-3-text.png) no-repeat 0 0;
@@ -255,14 +255,14 @@ body {
 #index .page-3 .sanitary_napkins {
     position: absolute;
     right: 15px;
-    top: 385px;
+    top: 265px;
     width: 385px;
     height: 513px;
     background: url(../images/products/page3.png) no-repeat 0 0
 }
 #index .page-3 .halo {
     position: absolute;
-    top: 810px;
+    top: 670px;
     left: 180px;
     width: 475px;
     height: 145px;
@@ -272,26 +272,28 @@ body {
 }
 #index .page-4 h2 {
     position: absolute;
-    left: 36px;
-    top: 112px;
-    width: 579px;
-    height: 76px;
-    background: url(../images/caption3.png?v=0) no-repeat 0 0
+    left: 50px;
+    top: 85px;
+    width: 529px;
+    height: 225px;
+    background: url(../images/page-5-text.png) no-repeat 0 0;
+    background-size: 529px 225px;
 }
 #index .page-4 .sanitary_napkins {
     position: absolute;
-    left: 224px;
-    top: 389px;
-    width: 433px;
-    height: 435px;
-    background: url(../images/sanitary_napkins_3.png) no-repeat 0 0
+    left: 10px;
+    top: 260px;
+    width: 620px;
+    height: 694px;
+    background: url(../images/products/page5.png) no-repeat 0 0
 }
 #index .page-4 .halo {
-    position: absolute;
-    left: 236px;
-    top: 700px;
+    position: relative;
+    /* left: 236px; */
+    top: 830px;
     width: 475px;
     height: 145px;
+    margin: auto;
     background: url(../images/halo.png) no-repeat 0 0;
     -webkit-animation: headLight 2s infinite both;
     animation: headLight 2s infinite both
