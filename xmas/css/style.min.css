@@ -235,7 +235,7 @@ body {
 }
 #index .page-2 .halo {
     position: absolute;
-    top: 520px;
+    top: 565px;
     left: 236px;
     width: 475px;
     height: 145px;
@@ -273,7 +273,7 @@ body {
 #index .page-4 h2 {
     position: absolute;
     left: 50px;
-    top: 85px;
+    top: 80px;
     width: 529px;
     height: 225px;
     background: url(../images/page-5-text.png) no-repeat 0 0;
@@ -282,7 +282,7 @@ body {
 #index .page-4 .sanitary_napkins {
     position: absolute;
     left: 10px;
-    top: 260px;
+    top: 280px;
     width: 620px;
     height: 694px;
     background: url(../images/products/page5.png) no-repeat 0 0
