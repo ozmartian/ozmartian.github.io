@@ -40,10 +40,27 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 9,
+				"buffer_size": 7835,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/stars.css",
+			"settings":
+			{
+				"buffer_size": 1938,
+				"line_ending": "Windows",
+				"name": "* {"
+			}
+		},
+		{
+			"file": "css/style.min.css",
+			"settings":
+			{
+				"buffer_size": 14532,
 				"line_ending": "Windows"
 			}
 		}
@@ -54,6 +71,10 @@
 		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
@@ -223,7 +244,7 @@
 				"Snippet: html"
 			]
 		],
-		"width": 520.0
+		"width": 672.0
 	},
 	"console":
 	{
@@ -257,6 +278,8 @@
 	},
 	"file_history":
 	[
+		"/F/Users/suspiria/Documents/_software/office/Microsoft Office Professional Plus 2010 [x64]/product-key.txt",
+		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/_DEV/Jewellery Promo/Kimi/whpivory.i2mago.com.cn/index.html",
 		"/C/_DEV/Jewellery Promo/Kimi/whpivory.i2mago.com.cn/index.ORIG.html",
@@ -382,9 +405,7 @@
 		"/C/_DEV/GSearch/search.php",
 		"/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/phpfmt/phpfmt.sublime-settings",
 		"/C/_DEV/CloudNest/_code/iPad/content/products/fruit.html",
-		"/C/_DEV/CloudNest/_code/iPad/content/shop.html",
-		"/C/_DEV/CloudNest/_code/iPad/content/planner.html",
-		"/C/_DEV/CloudNest/_code/iPad/content/contact.html"
+		"/C/_DEV/CloudNest/_code/iPad/content/shop.html"
 	],
 	"find":
 	{
@@ -613,7 +634,7 @@
 			"\\n$1",
 			"\\n"
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -622,33 +643,99 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Pete/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9,
+						"buffer_size": 7835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6,
-								6
+								1101,
+								1102
 							]
 						],
 						"settings":
 						{
-							"encoding_helper_encoding": "",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatron.tmTheme",
+							"encoding_helper_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/stars.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1934,
+								1934
+							]
+						],
+						"settings":
+						{
+							"auto_name": "* {",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatron.tmTheme",
+							"encoding_helper_encoding": "UTF-8",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/style.min.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5225,
+								5225
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatron.tmTheme",
+							"encoding_helper_encoding": "UTF-8",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4878.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
