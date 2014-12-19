@@ -1,116 +1,33 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-        <!--  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> -->
-        <meta content="yes" name="apple-mobile-web-app-capable" />
-        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
-        <meta content="telephone=no" name="format-detection" />
-        <meta content="email=no" name="format-detection" />
-        <title>Stardust&trade; | 圣诞节促销</title>
-        <link rel="stylesheet" type="text/css" href="css/style.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/stars.css" />
-        <script type="text/javascript">
-            (function (g) { var b, a, e, d, c, h, f; f = navigator.userAgent.toLowerCase(); isiOS = f.indexOf("ipad") > -1 || f.indexOf("iphone") > -1; a = window.devicePixelRatio; b = window.screen.width || window.screen.availWidth; e = g / b * a * 160; d = isiOS ? "width=" + g + ", user-scalable=no" : "target-densitydpi=" + e + ", width=" + g + ", user-scalable=no"; c = document.getElementsByTagName("head"); h = document.createElement("meta"); h.name = "viewport"; h.content = d; c.length > 0 && c[c.length - 1].appendChild(h) }(640));
-        </script>
+        <title>Stardust Jewelry&trade;</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="intro/css/styles.css" rel="stylesheet" />
+        <!-- <link href="css/stars.css" rel="stylesheet" /> -->
     </head>
-    <body id="index">
-        <div class="stars">
-            <canvas id="canvas"></canvas>
-        </div>
-        <div id="loading"></div>
+    <body>
         <div id="container">
-            <section class="page page-1 current">
-                <h1 class="captions" data-animation="slideToTop" data-delay="0" data-duration="1000"></h1>
-                <!-- <p class="captions" data-animation="slideToTop" data-delay="200" data-duration="1000"></p> -->
-                <div id="logo" class="captions" data-animation="slideToTop" data-delay="400" data-duration="1000"></div>
-                <div id="product" class="captions" data-animation="slideToTop" data-delay="600" data-duration="1000"></div>
-                <a id="topguide" href="javascript:void(0);" class="guideTop"></a>
-            </section>
-            <section class="page page-2">
-                <h2 data-animation="slideToBottom" data-delay="0" data-duration="1000"></h2>
-                <div class="wrap" data-animation="fadeout" data-delay="1200" data-duration="2000">
-                    <div class="halo"></div>
-                    <div class="sanitary_napkins"></div>
+            <div id="intro">
+                <img src="intro/img/intro_optimised.gif"/>
+                <div id="skip">
+                    <a href="main.html">跳过</a>
                 </div>
-                <a id="topguide" href="javascript:void(0);" class="guideTop"></a>
-            </section>
-            <section class="page page-3">
-                <h2 data-animation="slideToBottom" data-delay="0" data-duration="1000"></h2>
-                <div class="wrap" data-animation="fadeout" data-delay="1200" data-duration="2000">
-                    <div class="halo"></div>
-                    <div class="sanitary_napkins"></div>
-                </div>
-                <a id="topguide" href="javascript:void(0);" class="guideTop"></a>
-            </section>
-            <section class="page page-4">
-                <h2 data-animation="slideToBottom" data-delay="0" data-duration="1000"></h2>
-                <div class="wrap" align="center" data-animation="fadeout" data-delay="1200" data-duration="2000">
-                    <!-- <div class="halo"></div> -->
-                    <div class="sanitary_napkins"></div>
-                </div>
-            </section>
-            <!--
-                        <section class="page page-5">
-                                <h2 data-animation="slideToBottom" data-delay="0" data-duration="1000"></h2>
-                                <div class="ditu" data-animation="smallToBig" data-delay="1200" data-duration="1000"></div>
-                                <div class="ditu_img1" data-animation="smallToBig" data-delay="2600" data-duration="1000"></div>
-                                <div class="ditu_img2" data-animation="smallToBig" data-delay="4000" data-duration="1000"></div>
-                                <div class="ditu_img3" data-animation="smallToBig" data-delay="5400" data-duration="1000"></div>
-                                <div class="ditu_btn" data-animation="fadeout" data-delay="2000" data-duration="800"></div>
-                        </section>
-                        <section class="page page-6">
-                                <div class="content">
-                                        <h2 class="caption6_1" data-animation="slideToTop" data-delay="0" data-duration="1000"></h2>
-                                        <h3 class="caption6_2_1" data-animation="slideToTop" data-delay="600" data-duration="1000"></h3>
-                                        <h3 class="caption6_2_2" data-animation="slideToTop" data-delay="1200" data-duration="1000"></h3>
-                                        <div class="haiwaidaigou" data-animation="slideToTop" data-delay="1600" data-duration="1000"></div>
-                                        <div class="tiyan" data-animation="slideToTop" data-delay="2000" data-duration="1000">
-                                                <h3 class="caption6_3"></h3>
-                                                <div class="product_1">
-                                                        <a href="http://call.socialjia.com/Wxapp/weixin_common/oauth2.0/link.php?entid=54&url=http%3A%2F%2Fwx.shenghuojia.com%2F%3Fg%3DSKU">
-                                                        <div class="bigHalo">
-                                                                <img src="http://image.whpivory.i2mago.com.cn/images/product_1_v1.png" alt="" width="234" height="336" />
-                                                        </div>
-                                                        <div class="tips"></div>
-                                                        <span class="ljty"></span>
-                                                        </a>
-                                                </div>
-                                                <div class="product_3_4">
-                                                        <div class="product_3">
-                                                                <a href="http://call.socialjia.com/Wxapp/weixin_common/oauth2.0/link.php?entid=54&url=http%3A%2F%2Fwx.shenghuojia.com%2F%3Fg%3DSKU">
-                                                                <div class="smallHalo">
-                                                                        <img src="http://image.whpivory.i2mago.com.cn/images/product_3.png" alt="" width="173" height="241" />
-                                                                </div>
-                                                                <div class="tips"></div>
-                                                                <span class="ljty"></span>
-                                                                </a>
-                                                        </div>
-                                                        <div class="product_4">
-                                                                <a href="http://call.socialjia.com/Wxapp/weixin_common/oauth2.0/link.php?entid=54&url=http%3A%2F%2Fwx.shenghuojia.com%2F%3Fg%3DSKU">
-                                                                <div class="smallHalo">
-                                                                        <img src="http://image.whpivory.i2mago.com.cn/images/product_4.png" alt="" width="193" height="244" />
-                                                                </div>
-                                                                <div class="tips"></div>
-                                                                <span class="ljty"></span>
-                                                                </a>
-                                                        </div>
-                                                </div>
-                                        <footer></footer>
-                                </div>
-                        </div>
-                </section>
-        -->
-    </div>
-    <!-- <div class="stars"></div> -->
-    <div class="twinkling"></div>
-    <div class="clouds"></div>
-    <!--<script src="js/three.min.js"></script>
-    <script src="js/detector.js"></script>
-    <script src="js/stats.min.js"></script>
-    <script src="js/snowflakes.js"></script>-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/WeixinApi.min.js"></script>
-    <script src="js/ad2k.min.js"></script>
-</body>
+            </div>
+        </div>
+        <!-- <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div> -->
+        <script src="js/jquery.min.js"></script>
+        <script>
+            $(function(){
+                setTimeout(function(){
+                    $("#intro").fadeOut("slow", function() {
+                        document.location.href = "main.html";
+                    });
+                }, 22000);
+            });
+        </script>
+    </body>
 </html>
