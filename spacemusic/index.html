@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NEW TRACKS</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="skin/pink.flag/css/jplayer.pink.flag.min.css" rel="stylesheet" />
+    <style>
+        body{
+            text-align: center;
+            padding: 100px;
+            background: #180a1f url('space.jpg') no-repeat 0 0;
+        }
+        h1 {
+            color: #EFEFEF;
+            text-shadow: 0 1px 0 #222;
+            font-size: 2.5rem;
+        }
+        .jp-audio {
+            margin: 0 auto;
+        }
+        .jp-playlist li {
+            padding: 8px 0 !important;
+            border: none !important;
+            white-space: nowrap !important;
+        }
+        .jp-gui .jp-interface {
+            margin-bottom: 15px !important;
+        }
+        ul {
+            margin-top: 20px !important;
+        }
+        .jp-playlist-item {
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <h1>NEW TRACKS</h1>
+    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+    <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+        <div class="jp-type-playlist">
+            <div class="jp-gui jp-interface">
+                <div class="jp-volume-controls">
+                    <button class="jp-mute" role="button" tabindex="0">mute</button>
+                    <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                    <div class="jp-volume-bar">
+                        <div class="jp-volume-bar-value"></div>
+                    </div>
+                </div>
+                <div class="jp-controls-holder">
+                    <div class="jp-controls">
+                        <button class="jp-previous" role="button" tabindex="0">previous</button>
+                        <button class="jp-play" role="button" tabindex="0">play</button>
+                        <button class="jp-stop" role="button" tabindex="0">stop</button>
+                        <button class="jp-next" role="button" tabindex="0">next</button>
+                    </div>
+                    <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                            <div class="jp-play-bar"></div>
+                        </div>
+                    </div>
+                    <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                    <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                    <div class="jp-toggles">
+                        <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                        <button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+                    </div>
+                </div>
+            </div>
+            <div class="jp-playlist">
+                <ul>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+            <div class="jp-no-solution">
+                <span>Update Required</span>
+                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+            </div>
+        </div>
+    </div>
+    <script src="lib/jquery.min.js"></script>
+    <script src="jplayer/jquery.jplayer.min.js"></script>
+    <script src="add-on/jplayer.playlist.min.js"></script>
+    <script>
+        $(function() {
+            $('#jquery_jplayer_1').jPlayer({
+                swfPath: '../dist/jplayer',
+                solution: 'html, flash',
+                supplied: 'oga, mp3',
+                preload: 'metadata',
+                volume: 0.8,
+                muted: false,
+                backgroundColor: '#000000',
+                cssSelectorAncestor: '#jp_container_1',
+                cssSelector: {
+                    videoPlay: '.jp-video-play',
+                    play: '.jp-play',
+                    pause: '.jp-pause',
+                    stop: '.jp-stop',
+                    seekBar: '.jp-seek-bar',
+                    playBar: '.jp-play-bar',
+                    mute: '.jp-mute',
+                    unmute: '.jp-unmute',
+                    volumeBar: '.jp-volume-bar',
+                    volumeBarValue: '.jp-volume-bar-value',
+                    volumeMax: '.jp-volume-max',
+                    playbackRateBar: '.jp-playback-rate-bar',
+                    playbackRateBarValue: '.jp-playback-rate-bar-value',
+                    currentTime: '.jp-current-time',
+                    duration: '.jp-duration',
+                    title: '.jp-title',
+                    fullScreen: '.jp-full-screen',
+                    restoreScreen: '.jp-restore-screen',
+                    repeat: '.jp-repeat',
+                    repeatOff: '.jp-repeat-off',
+                    gui: '.jp-gui',
+                    noSolution: '.jp-no-solution'
+                },
+                errorAlerts: false,
+                warningAlerts: false
+            });
+            new jPlayerPlaylist({
+                jPlayer: '#jquery_jplayer_1',
+                cssSelectorAncestor: '#jp_container_1'
+                },[
+                    {
+                        title: '01. Sci-Retro-Fi (Final Master)',
+                        mp3: 'NEW_01.mp3'
+                    },
+                    {
+                        title: '02. Grunty (Final Master)',
+                        mp3: 'NEW_02.mp3'
+                    }
+                ],{
+                    swfPath: 'jplayer',
+                    supplied: 'mp3',
+                    wmode: 'window',
+                    useStateClassSkin: true,
+                    autoBlue: true,
+                    smoothPlayBar: true,
+                    keyEnabled: true
+                }
+            );
+        });
+    </script>
+</body>
+
+</html>
